@@ -1,11 +1,13 @@
-
-import './App.css';
+import "./App.css";
+import Scope from "../src/Basics/Scope";
+import Function from "./Basics/Function";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Lets Get Started</h1>
-    </div>
+    <>
+      <Scope />
+      <Function />
+    </>
   );
 }
 
