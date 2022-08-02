@@ -25,16 +25,14 @@ function Function() {
    }
   *************************************************************************************************************************************************/
   /** IF WE WANT TO PROVIDE DYNAMIC VARIABLES TO THE FUNCTION WE CAN PASS NAMED PARAMETERS **/
-  const add = function (a, b,name) {
- 
-    const messege =  (`hi ${name} you are ${a} years old and you are ${b} years old`);
-    return messege;  
+ //We want to call this function inside the return statement.  
+  const Add = function (a, b, name) {
+    return ` ${name} is ${a + b} years old`;
   };
-  add(10, 20, "John");
 
   return (
     <div className="Function">
-      <div>{add}</div>
+      <div>{Add(10, 19, "harsha")}</div>{/* //**Add functio is called here.**/}
     </div>
   );
 }
