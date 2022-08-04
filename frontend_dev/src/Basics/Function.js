@@ -19,21 +19,25 @@ function Function() {
   };
 
   //Passing Arguments to a Function
-  /********SIMPLE ARGUMENTS*********************************************************************************************************************** 
+  /********************************************************SIMPLE ARGUMENTS**************************************************** 
    function add(a) { 
        return a;
    }
-  *************************************************************************************************************************************************/
-  /** IF WE WANT TO PROVIDE DYNAMIC VARIABLES TO THE FUNCTION WE CAN PASS NAMED PARAMETERS **/
+  ********************************************************************************************************************************/
+  /************************** IF WE WANT TO PROVIDE DYNAMIC VARIABLES TO THE FUNCTION WE CAN PASS NAMED PARAMETERS ***************/
  //We want to call this function inside the return statement.  
-  const Add = function (a, b, name) {
-    return ` ${name} is ${a + b} years old`;
+  const Add = function (a, b, name) {  //Add is a function expression. a,b,name are named parameters.
+    return ` ${name} is ${a + b} years old`; //function invocation returns arguments.
   };
-
+  /**********************************************************ARROW FUNCTIONS *****************************************************/
+  //Passing Arguments to a Function
   return (
     <div className="Function">
-      <div>{Add(10, 19, "harsha")}</div>{/* //**Add functio is called here.**/}
+      <div>{Add(10, 19, "harsha")}</div>{/**Add function is called here.We are passing dynamic values here**/}
+
     </div>
   );
 }
 export default Function;
+
+
