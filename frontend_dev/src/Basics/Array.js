@@ -20,3 +20,20 @@
 //HOW TO DEBUG OUR CODE ? AND HOW TO TRACK THE CALL STACK ?
 //WHERE TO PLACE DEBGGER ?
 //WHERE TO PLACE LOGGER ?
+
+function Array() {
+    const arr1 = [1, 2, 3, 4, 5];
+    const arr2 = [1, 2, 3, 4, 5];
+    const arr5 = arr1.join(2);
+    const arr3 = [...arr1,...arr2].reverse();
+    let index = arr3.lastIndexOf(3);
+
+    return(
+        <div className="Array">
+            <p>{arr3}</p>
+            <p>{arr5}</p>
+            <p>{index}</p>
+        </div>
+    )
+}
+export default Array;
