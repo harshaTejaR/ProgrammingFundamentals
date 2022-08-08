@@ -5,10 +5,11 @@ function Destructure() {
     cheese: "cheddar",
     toppings: ["tomato", "onion", "pickles"],
   };
+  
   const { bread, meat } = sandwitch;
   return (
   <div className="Destructuring">
-    <p>{`type of bread is :${bread}, meat added is:${meat}`}</p>;
+    <p>{`type of bread is :${bread}, meat added is:${meat}`}</p>
   </div>
   )
 }
