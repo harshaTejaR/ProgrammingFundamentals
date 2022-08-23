@@ -1,25 +1,3 @@
-// const MainHeader = () => {
-//     return <header>
-//         <nav>
-//             <ul>
-//                 <li>
-//                     <a href="/">Home</a>
-//                 </li>
-//                 <li>
-//                     <a href="/counter">Counter</a>
-//                 </li>
-//                 <li>
-//                     <a href="/scope">Scope</a>
-//                 </li>
-//                 <li>
-//                     <a href="/Function">Function</a>
-//                 </li>
-//             </ul>
-//         </nav>
-//     </header>
-// }
-// export default MainHeader;
-
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
