@@ -14,9 +14,20 @@ function Function() {
      Const protects the function from being modified.And function is not hoisted.
      Prevented from being accessed before it is declared.
      *****************************************************************************/
-  const Function = function () {
-    return "Function Expression";
-  };
+  // const Function = function () {
+  //   return "Function Expression";
+  // };
+
+  /************************ARROW fUNCTION*****************************/
+//normal function
+/* 
+  function myFunc(){
+    return;
+  }
+*/const myFunc = (name) => {    //NO more issues with this keyword since arrow is used to refer the (props).
+  return `${name} is a good boy`;
+}
+
 
   //Passing Arguments to a Function
   /********************************************************SIMPLE ARGUMENTS**************************************************** 
@@ -34,10 +45,11 @@ function Function() {
   return (
     <div className="Function">
       <div>{Add(10, 19, "harsha")}</div>{/**Add function is called here.We are passing dynamic values here**/}
-
+    	<p>{myFunc("Harsha")} </p>
     </div>
   );
 }
 export default Function;
+
 
 

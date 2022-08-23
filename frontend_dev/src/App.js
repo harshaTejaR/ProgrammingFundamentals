@@ -6,7 +6,7 @@ import Array from "./Basics/Array";
 import Pagination from "./Basics/ClassComponents/ClassComponent";
 import CountdownTimer from "./CountDown";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AppBreadCrumbs from "./Components/AppBreadCrumbs";
+import MainHeader from "./Components/MainHeader";
 
 function App() {
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
@@ -14,29 +14,32 @@ function App() {
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
-    <Router>
-      <Switch>
-        <Route path="/counter">
-          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
-        </Route>
-        <Route path="/scope">
-          <Scope />
-        </Route>
-        <Route path="/Function">
-          <Function />
-        </Route>
-        <Route path="/destructure">
-          <Destructure />
-        </Route>
-        <Route path="/array">
-          <Array />
-        </Route>
-        <Route path="/scope">
-          <Pagination />
-        </Route>
-        <AppBreadCrumbs />
-      </Switch>
-    </Router>
+    <div className="App">
+      <MainHeader />
+      <Router>
+        <Switch>
+          <Route path="/counter">
+            <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+          </Route>
+          <Route path="/scope">
+            <Scope />
+          </Route>
+          <Route path="/Function">
+            <Function />
+          </Route>
+          <Route path="/destructure">
+            <Destructure />
+          </Route>
+          <Route path="/array">
+            <Array />
+          </Route>
+          <Route path="/scope">
+            <Pagination />
+          </Route>
+
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
