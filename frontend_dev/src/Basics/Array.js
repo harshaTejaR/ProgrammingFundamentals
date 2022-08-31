@@ -1,5 +1,6 @@
 /****************WORRY ABOUT THIS LATER**********************************/
 
+
 // import React from "react";
 // function Array() {
 //   const sum = (x, y) => x + y;
@@ -22,18 +23,19 @@
 //WHERE TO PLACE LOGGER ?
 
 function Array() {
-    const arr1 = [1, 2, 3, 4, 5];
-    const arr2 = [1, 2, 3, 4, 5];
-    const arr5 = arr1.join(2);
-    const arr3 = [...arr1,...arr2].reverse();
-    let index = arr3.lastIndexOf(3);
+  const arr1 = [1, 2, 3, 4, 5];
+  const arr2 = [1, 2, 3, 4, 5];
+  function isEqual() {
+    return JSON.stringify(arr1) === JSON.stringify(arr2)? "given arrays are matched" : "given arrays are not matched." ;
+  }
 
-    return(
-        <div className="Array">
-            <p>{arr3}</p>
-            <p>{arr5}</p>
-            <p>{index}</p>
-        </div>
-    )
+  return (
+    <div className="Array">
+      <p>
+        Comparing two arrays {arr1} and {arr2}
+      </p>
+      <p>{(isEqual())}</p>
+    </div>
+  );
 }
 export default Array;
