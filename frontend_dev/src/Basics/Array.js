@@ -21,20 +21,20 @@
 //HOW TO DEBUG OUR CODE ? AND HOW TO TRACK THE CALL STACK ?
 //WHERE TO PLACE DEBGGER ?
 //WHERE TO PLACE LOGGER ?
-
+import Strings from "./Strings";
 function Array() {
   const arr1 = [1, 2, 3, 4, 5];
   const arr2 = [1, 2, 3, 4, 5];
   function isEqual() {
-    return JSON.stringify(arr1) === JSON.stringify(arr2)? "given arrays are matched" : "given arrays are not matched." ;
+    return JSON.stringify(arr1) === JSON.stringify(arr2) ? "given arrays are matched" : "given arrays are not matched." ;
   }
-
   return (
     <div className="Array">
       <p>
         Comparing two arrays {arr1} and {arr2}
       </p>
       <p>{(isEqual())}</p>
+    <Strings/>
     </div>
   );
 }
