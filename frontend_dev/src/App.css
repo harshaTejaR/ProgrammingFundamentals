@@ -2,15 +2,7 @@
   text-align: center;
   justify-content: center;
 }
-*{
-  justify-content: center;
-  text-align: center;
 
-  /* grid-column: auto;  
-  box-sizing: border-box;
-  outline: 1px solid limegreen; */
-
-}
 .expired-notice {
   text-align: center;
   padding: 2rem;

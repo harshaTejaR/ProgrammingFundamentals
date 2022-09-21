@@ -1,21 +1,27 @@
 import "./App.css";
-import Scope from "../src/Basics/Scope";
-import Function from "./Basics/Function";
-import Destructure from "./Basics/Destructuring";
 import ResponsiveAppBar from "./Components/MainHeader";
-import Array from "./Basics/Array";
 import ContactForm from "./Components/contactForm";
-function App() {
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AboutPage from "./Pages/AboutMePage";
 
+function App() {
   return (
-    <>
-      <ResponsiveAppBar/>
-      <ContactForm/>
-      <Array/>
-      <Scope />
-      <Function />
-      <Destructure />
-    </>
+    <Router>
+      <div className="App">
+        <ResponsiveAppBar />
+        <div className="content">
+          <Switch>
+            <Route path="/contact">
+              <ContactForm />
+            </Route>
+
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

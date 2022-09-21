@@ -1,0 +1,9 @@
+.appbar toolbar_container toolbar {
+    display: flex;
+    flex-grow: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
