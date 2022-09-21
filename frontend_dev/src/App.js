@@ -1,5 +1,5 @@
 import "./App.css";
-import ResponsiveAppBar from "./Components/MainHeader";
+import Header from "./Components/MainHeader";
 import ContactForm from "./Components/contactForm";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AboutPage from "./Pages/AboutMePage";
@@ -8,15 +8,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ResponsiveAppBar />
+        <Header />
         <div className="content">
           <Switch>
-            <Route path="/contact">
-              <ContactForm />
-            </Route>
-
-            <Route path="/about">
+            <Route exact path="/about">
               <AboutPage />
+      
+            </Route>
+            <Route exact path="/contact">
+              <ContactForm />
             </Route>
           </Switch>
         </div>

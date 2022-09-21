@@ -1,11 +1,11 @@
 import React from "react";
+import Game from "../Components/Game";
 function AboutPage() {
   return (
-    <container className="about_me_page">
-      <div className="about_me_page">
-        <h1>This is About me page.</h1>
-      </div>
-    </container>
+    <div className="about_me_page">
+      <h1>This is About me page.</h1>
+      <Game />
+    </div>
   );
 }
 export default AboutPage;
